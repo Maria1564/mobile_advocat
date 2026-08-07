@@ -17,12 +17,24 @@ h1 {
     font-size: 48px;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 38px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
 p {
     font-size: 16px;
 }
 
 button {
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 .container {
@@ -31,8 +43,29 @@ button {
     margin: 0 auto;
 }
 
-.header {
-    width: 100%;
+.list-item {
+    position: relative;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #D3D3D3;
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.list-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #D3D3D3;
 }
 
 .header-top {
@@ -256,4 +289,94 @@ button {
     line-height: 135%;
     letter-spacing: -3%;
     color: #798386
+}
+
+.comparison {
+    background-image: url(../img/bg-2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.comparison__title {
+   text-align: center;
+}
+
+.comparison__title > span {
+    color: #6AB9A4;
+}
+
+.comparison__text {
+    margin: 42px auto;
+    max-width: 1000px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -3%;
+    color: #9EA3A4;
+}
+
+.comparison__cards {
+    max-width: 954px;
+    background-color: #0A0E0D70;
+    backdrop-filter: blur(12.3px);
+    margin: 0 auto;
+    border-radius: 24px;
+    padding: 4px;
+    display: flex;
+}
+
+.comparison__card {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 32px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.comparison__card_active {
+    background-color: #0A0E0D;
+    border-radius: 22px;
+    border: 1px solid #67EDB7;
+    box-shadow: 0 6px 15px 0 #67EDB740;
+}
+
+.comparison__box {
+    width: 40px;
+    height: 40px;
+    background-color: #A1A1A1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comparison__card_active .comparison__box {
+    background-color: #67EDB7;
+    box-shadow: 0 6px 15px 0 #67EDB740;
+}
+
+.comparison__card-tite {
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+.comparison__btn {
+    width: 100%;
+    padding: 23px 0;
+    background-color: #67EDB7;
+    box-shadow: 0 6px 15px 0 #67EDB740;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #383838;
+    transition: background-color .5s;
+}
+
+.comparison__btn:hover {
+    background-color: #9effd8;
 }
