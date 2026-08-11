@@ -1,9 +1,14 @@
 body {
-  box-sizing: border-box;
   background-color: #0a0e0d;
   width: 100%;
   color: #ffffff;
   font-family: "Manrope", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 a {
@@ -39,6 +44,10 @@ button {
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+li {
+  list-style: none;
 }
 
 .btn {
@@ -644,9 +653,93 @@ button {
 }
 
 .confidentiality__card-text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 135%;
-    letter-spacing: -3%;
-    color: #D4D4D4;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: -3%;
+  color: #d4d4d4;
+}
+
+.pricing {
+  align-items: start;
+}
+
+.pricing__service {
+  width: 100%;
+  padding: 26px 27px 26px 24px;
+  border-radius: 22px;
+  border: 1px solid #d3d3d31c;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(103, 237, 183, 0.34) 100%
+    ),
+    #050b09;
+  background-clip: padding-box;
+  margin-bottom: 8px;
+}
+
+.service__top {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ffffff54;
+}
+
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "badge list-left list-right"
+    "badge list-left list-right"
+    "title list-left list-right";
+  gap: 8px;
+  width: 100%;
+}
+
+.service__icon {
+  grid-area: badge;
+}
+
+.service__title {
+  grid-area: title;
+}
+
+.service__list_left {
+  grid-area: list-left;
+}
+
+.service__list-right {
+  grid-area: list-right;
+}
+
+.service__bottom {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__price {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.service__amount {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #67edb7;
+}
+
+.service__term {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.service__btn {
+  padding-right: 38px;
+  padding-left: 38px;
 }
