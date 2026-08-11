@@ -1,154 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мобильный адвокат</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="header-top">
-                <a href="#" class="header-top__logo-wrapper logo">
-                    <div class="logo__box"></div>
-                    <div class="logo__text">Мобильный
-                        адвокат</div>
-                </a>
+      <header class="header">
+        <div class="header-top">
+          <a href="#" class="header-top__logo-wrapper logo">
+            <div class="logo__box"></div>
+            <div class="logo__text">Мобильный адвокат</div>
+          </a>
 
-                <div class="header-top__actions">
-                    <a href="#" class="header-top__link">
-                        <img src="./img/brand-telegram.svg" alt="telegram">
-                        <span>Перейти в Telegram</span>
-                    </a>
-                    <button class="header-top__btn">Описать ситуацию</button>
-                </div>
-            </div>
-            <nav class="header__nav nav">
-                <a href="#" class="nav__link">Когда обращаться</a>
-                <a href="#" class="nav__link">Что вы получите</a>
-                <a href="#" class="nav__link">Как проходит работа</a>
-                <a href="#" class="nav__link">Стоимость</a>
-                <a href="#" class="nav__link">Примеры ситуаций</a>
-                <a href="#" class="nav__link">FAQ</a>
-            </nav>
-        </header>
-
-        <section class="hero">
-            <div class="hero__content">
-                <h1>
-                    Разберём документы,
-                    оценим риски <br>
-                    <span class="hero__span">и возможные сценарии развития дела</span>
-                </h1>
-
-                <p class="hero__text">Изучим материалы уголовного, гражданского или административного дела и подготовим
-                    письменное
-                    аналитическое заключение: что происходит, какие есть риски и на что обратить внимание при дальнейших
-                    действиях.</p>
-
-                <div class="hero__actions">
-                    <button class="hero__btn">Получить предварительную оценку</button>
-                    <a href="#" class="hero__link">
-                        <img src="./img/telegram-black.svg" alt="telegram">
-                        <span>Перейти в Telegram</span>
-                    </a>
-                </div>
-            </div>
-            <div class="hero__image">
-                <img src="./img/bg.png" alt="bg">
-            </div>
-        </section>
-
-        <section class="benefits">
-            <div class="benefits__list">
-                <div class="benefits__item">
-                    <img src="./img/award-filled.svg" alt="award" class="benefits__icon">
-                    <div class="benefits__content">
-                        <h5 class="benefits__title">Практический опыт</h5>
-                        <p class="benefits__text">Заключение готовится специалистами, имеющими практический опыт работы
-                            с юридическими делами.
-                        </p>
-                    </div>
-                </div>
-                <div class="benefits__item">
-                    <img src="./img/file-filled.svg" alt="file" class="benefits__icon">
-                    <div class="benefits__content">
-                        <h5 class="benefits__title">Письменный результат</h5>
-                        <p class="benefits__text">Вы получаете не устную консультацию, а структурированное аналитическое
-                            заключение.
-                        </p>
-                    </div>
-                </div>
-                <div class="benefits__item">
-                    <img src="./img/clock-filled.svg" alt="clock" class="benefits__icon">
-                    <div class="benefits__content">
-                        <h5 class="benefits__title">Подготовка за 3–5 дней</h5>
-                        <p class="benefits__text">Фиксированный срок подготовки после получения необходимых материалов.
-                        </p>
-                    </div>
-                </div>
-                <div class="benefits__item">
-                    <img src="./img/shield-check-filled.svg" alt="shield" class="benefits__icon">
-                    <div class="benefits__content">
-                        <h5 class="benefits__title">Конфиденциальность</h5>
-                        <p class="benefits__text">Документы доступны только специалистам, участвующим в подготовке
-                            заключения.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <section class="comparison">
-        <div class="container">
-            <h2 class="comparison__title">Не замена адвоката, <br>
-                <span>а независимый взгляд на ситуацию</span>
-            </h2>
-            <p class="comparison__text">Услуга подойдёт, когда необходимо сначала разобраться в ситуации, оценить
-                основные риски или проверить
-                уже выбранную стратегию. Вы получаете письменный разбор, с которым сможете принимать дальнейшие решения
-                и предметно обсуждать дело со своим адвокатом или представителем.</p>
-
-            <div class="comparison__cards">
-                <article class="comparison__card comparison__card_active">
-                    <div class="comparison__box">
-                        <img src="./img/check.svg" alt="check">
-                    </div>
-                    <h3 class="comparison__card-tite">Аналитическое <br>
-                        заключение</h3>
-                    <ul class="list">
-                        <li class="list-item">Результат остаётся в письменном виде</li>
-                        <li class="list-item">Анализируются предоставленные документы</li>
-                        <li class="list-item">Специалист отдельно изучает материалы</li>
-                        <li class="list-item">Цель — оценка ситуации, рисков и сценариев</li>
-                    </ul>
-                    <button class="comparison__btn">Узнать, подходит ли мне услуга</button>
-                </article>
-                <article class="comparison__card">
-                    <div class="comparison__box">
-                        <img src="./img/question-mark.svg" alt="question">
-                    </div>
-                    <h3 class="comparison__card-tite">Обычная первичная <br>
-                        консультация</h3>
-                    <ul class="list">
-                        <li class="list-item">Часто проходит устно</li>
-                        <li class="list-item">Может основываться на кратком описании</li>
-                        <li class="list-item">Ответы даются во время разговора</li>
-                        <li class="list-item">Основная цель — консультация</li>
-                    </ul>
-                </article>
-            </div>
+          <div class="header-top__actions">
+            <a href="#" class="header-top__link">
+              <img src="./img/brand-telegram.svg" alt="telegram" />
+              <span>Перейти в Telegram</span>
+            </a>
+            <button class="header-top__btn">Описать ситуацию</button>
+          </div>
         </div>
+        <nav class="header__nav nav">
+          <a href="#" class="nav__link">Когда обращаться</a>
+          <a href="#" class="nav__link">Что вы получите</a>
+          <a href="#" class="nav__link">Как проходит работа</a>
+          <a href="#" class="nav__link">Стоимость</a>
+          <a href="#" class="nav__link">Примеры ситуаций</a>
+          <a href="#" class="nav__link">FAQ</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero__content">
+          <h1>
+            Разберём документы, оценим риски <br />
+            <span class="hero__span">и возможные сценарии развития дела</span>
+          </h1>
+
+          <p class="hero__text">
+            Изучим материалы уголовного, гражданского или административного дела
+            и подготовим письменное аналитическое заключение: что происходит,
+            какие есть риски и на что обратить внимание при дальнейших
+            действиях.
+          </p>
+
+          <div class="hero__actions">
+            <button class="hero__btn">Получить предварительную оценку</button>
+            <a href="#" class="hero__link">
+              <img src="./img/telegram-black.svg" alt="telegram" />
+              <span>Перейти в Telegram</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="./img/bg.png" alt="bg" />
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__list">
+          <div class="benefits__item">
+            <img
+              src="./img/award-filled.svg"
+              alt="award"
+              class="benefits__icon"
+            />
+            <div class="benefits__content">
+              <h5 class="benefits__title">Практический опыт</h5>
+              <p class="benefits__text">
+                Заключение готовится специалистами, имеющими практический опыт
+                работы с юридическими делами.
+              </p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <img
+              src="./img/file-filled.svg"
+              alt="file"
+              class="benefits__icon"
+            />
+            <div class="benefits__content">
+              <h5 class="benefits__title">Письменный результат</h5>
+              <p class="benefits__text">
+                Вы получаете не устную консультацию, а структурированное
+                аналитическое заключение.
+              </p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <img
+              src="./img/clock-filled.svg"
+              alt="clock"
+              class="benefits__icon"
+            />
+            <div class="benefits__content">
+              <h5 class="benefits__title">Подготовка за 3–5 дней</h5>
+              <p class="benefits__text">
+                Фиксированный срок подготовки после получения необходимых
+                материалов.
+              </p>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <img
+              src="./img/shield-check-filled.svg"
+              alt="shield"
+              class="benefits__icon"
+            />
+            <div class="benefits__content">
+              <h5 class="benefits__title">Конфиденциальность</h5>
+              <p class="benefits__text">
+                Документы доступны только специалистам, участвующим в подготовке
+                заключения.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases">
+        <h2 class="cases__title">В каких ситуациях стоит обратиться</h2>
+
+        <div class="cases__list">
+          <article class="cases__card">
+            <img src="./img/case-1.png" alt="" class="cases__card-img" />
+            <a href="#" class="cases__link">
+              <span class="cases__icon">
+                <img src="./img/arrow-right.svg" alt="arrow right" />
+              </span>
+              <span class="cases__text">Уголовное дело</span>
+            </a>
+          </article>
+          <article class="cases__card">
+            <img src="./img/case-2.png" alt="" class="cases__card-img" />
+            <a href="#" class="cases__link">
+              <span class="cases__icon">
+                <img src="./img/arrow-right.svg" alt="arrow right" />
+              </span>
+              <span class="cases__text">Гражданский спор</span>
+            </a>
+          </article>
+          <article class="cases__card">
+            <img src="./img/case-3.png" alt="" class="cases__card-img" />
+            <a href="#" class="cases__link">
+              <span class="cases__icon">
+                <img src="./img/arrow-right.svg" alt="arrow right" />
+              </span>
+              <span class="cases__text">Проверка работы представителя</span>
+            </a>
+          </article>
+        </div>
+
+        <button class="btn cases__btn">Обсудить мою ситуацию</button>
+      </section>
+    </div>
+
+    <section class="comparison">
+      <div class="container">
+        <h2 class="comparison__title">
+          Не замена адвоката, <br />
+          <span>а независимый взгляд на ситуацию</span>
+        </h2>
+        <p class="comparison__text">
+          Услуга подойдёт, когда необходимо сначала разобраться в ситуации,
+          оценить основные риски или проверить уже выбранную стратегию. Вы
+          получаете письменный разбор, с которым сможете принимать дальнейшие
+          решения и предметно обсуждать дело со своим адвокатом или
+          представителем.
+        </p>
+
+        <div class="comparison__cards">
+          <article class="comparison__card comparison__card_active">
+            <div class="comparison__box">
+              <img src="./img/check.svg" alt="check" />
+            </div>
+            <h3 class="comparison__card-tite">
+              Аналитическое <br />
+              заключение
+            </h3>
+            <ul class="list">
+              <li class="list-item">Результат остаётся в письменном виде</li>
+              <li class="list-item">Анализируются предоставленные документы</li>
+              <li class="list-item">Специалист отдельно изучает материалы</li>
+              <li class="list-item">
+                Цель — оценка ситуации, рисков и сценариев
+              </li>
+            </ul>
+            <button class="comparison__btn">
+              Узнать, подходит ли мне услуга
+            </button>
+          </article>
+          <article class="comparison__card">
+            <div class="comparison__box">
+              <img src="./img/question-mark.svg" alt="question" />
+            </div>
+            <h3 class="comparison__card-tite">
+              Обычная первичная <br />
+              консультация
+            </h3>
+            <ul class="list">
+              <li class="list-item">Часто проходит устно</li>
+              <li class="list-item">Может основываться на кратком описании</li>
+              <li class="list-item">Ответы даются во время разговора</li>
+              <li class="list-item">Основная цель — консультация</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
     <script src="./scripts/main.js"></script>
-</body>
-
+  </body>
 </html>
