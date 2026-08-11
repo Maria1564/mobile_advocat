@@ -46,11 +46,19 @@ button {
   font-size: 16px;
   line-height: 100%;
   border-radius: 8px;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 .btn:hover {
-    background-color: #84d6b5;
+  background-color: #84d6b5;
+}
+
+.section {
+  padding: 72px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  align-items: center;
 }
 
 .container {
@@ -82,6 +90,18 @@ button {
   height: 6px;
   border-radius: 50%;
   background-color: #d3d3d3;
+}
+
+.badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #67edb7;
+  box-shadow: 0 6px 15.6px 0 #67edb740;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-top {
@@ -395,14 +415,6 @@ button {
   background-color: #9effd8;
 }
 
-.cases {
-  padding: 72px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 42px;
-}
-
 .cases__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -453,4 +465,74 @@ button {
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -2%;
+}
+
+.conclusion__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "image image situation risks"
+    "image image scenario actions"
+    ".     .     note     note";
+  width: 100%;
+}
+
+.conclusion__img {
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conclusion__img > img {
+  width: 504px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.conclusion__card {
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.conclusion__card-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: -3%;
+    color: #9EA3A4;
+}
+
+.conclusion__card--situation {
+  grid-area: situation;
+}
+
+.conclusion__card--risks {
+  grid-area: risks;
+}
+
+.conclusion__card--scenario {
+  grid-area: scenario;
+}
+
+.conclusion__card--actions {
+  grid-area: actions;
+}
+
+.conclusion__note {
+    grid-area: note;
+    padding: 16px 26px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.conclusion__note-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: -3%;
+    color: #68EDB7;
 }
