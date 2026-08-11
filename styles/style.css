@@ -20,11 +20,15 @@ h1 {
 h2 {
   font-weight: 600;
   font-size: 38px;
+  line-height: 100%;
+  letter-spacing: -2%;
 }
 
 h3 {
   font-weight: 600;
   font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -2%;
 }
 
 p {
@@ -545,55 +549,104 @@ button {
 }
 
 .setps__item {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
 .steps__item_last .steps__item-top:after {
-    display: none;
+  display: none;
 }
 
 .steps__item-top {
-    position: relative;
+  position: relative;
 }
 
 .steps__item-top:after {
-    content: "";
-    width: calc(100% - (40px + 16px));
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 2px;
-    background-color: #67EDB7;
-    position: absolute;
-    box-shadow: 0 6px 15.6px 0 #67EDB740;
+  content: "";
+  width: calc(100% - (40px + 16px));
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  background-color: #67edb7;
+  position: absolute;
+  box-shadow: 0 6px 15.6px 0 #67edb740;
 }
 
 .steps__item-step {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: -4%;
-    color: #67EDB7;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -4%;
+  color: #67edb7;
 }
 
 .steps__item-content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .steps__item-title {
-    font-size: 22px;
-    line-height: 100%;
-    letter-spacing: -2%;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: -2%;
 }
 
 .steps__item-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 135%;
+  letter-spacing: -3%;
+  color: #9ea3a4;
+}
+
+.confidentiality {
+  align-items: start;
+}
+
+.confidentiality__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -3%;
+  color: #9ea3a4;
+  max-width: 880px;
+}
+
+.confidentiality__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 8px;
+}
+
+.confidentiality__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 26px 41px;
+  border: 1px solid #f2f2f226;
+  border-radius: 22px;
+}
+
+.confidentiality__card > img {
+  width: 135px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.confidentiality__card-title {
+  margin-bottom: 28px;
+}
+
+.confidentiality__card-text {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 135%;
     letter-spacing: -3%;
-    color: #9EA3A4;
+    color: #D4D4D4;
 }
