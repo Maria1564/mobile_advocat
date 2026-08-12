@@ -3,6 +3,7 @@ body {
   width: 100%;
   color: #ffffff;
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 *,
@@ -827,6 +828,16 @@ li {
   color: #9ea3a4;
 }
 
+.slider {
+  width: 100%;
+}
+
+.results__slider {
+  width: calc(100vw - max(0px, (100vw - 1376px) / 2));
+  margin-right: calc(-1 * max(0px, (100vw - 1376px) / 2));
+  overflow: hidden;
+}
+
 .results__slide {
   border: 1px solid #494844;
   border-radius: 22px;
@@ -834,9 +845,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 32px;
-  max-height: 675px;
-  max-width: 626px;
+  gap: 24px;
+  height: 675px;
   overflow: hidden;
   position: relative;
   background: #050b09;
@@ -862,7 +872,14 @@ li {
 .results__paragraph {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
+}
+
+.results__paragraph p {
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: -3%;
+  color: #9ea3a4;
 }
 
 .results__slide-img {
@@ -891,9 +908,10 @@ li {
 }
 
 .results__slide-btn {
-  position: relative;
-  z-index: 20;
-  bottom: 115px;
+  position: absolute;
+  left: 26px;
+  bottom: 26px;
+  z-index: 2;
   padding: 15px 20px;
   background-color: transparent;
   border-radius: 8px;
@@ -907,4 +925,49 @@ li {
 
 .results__slide-btn:hover {
   opacity: 0.7;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.slider-nav__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #67edb7;
+  box-shadow: 0 6px 15.6px 0 #67edb740;
+  color: #0a0e0d;
+  font-size: 22px;
+  line-height: 1;
+  transition:
+    background-color 0.5s,
+    opacity 0.5s;
+}
+
+.slider-nav__btn:hover {
+  background-color: #84d6b5;
+}
+
+.slider-nav__btn.swiper-button-disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.slider-nav__btn--prev,
+.slider-nav__btn--next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-nav__btn--prev > img {
+  transform: rotate(180deg);
 }

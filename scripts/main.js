@@ -1,6 +1,10 @@
 const nav = document.querySelector(".nav");
 
 function setNavDividers() {
+    if (!nav) {
+        return;
+    }
+
     nav.querySelectorAll(".nav__divider").forEach((divider) => divider.remove());
 
     const links = [...nav.querySelectorAll(".nav__link")];
@@ -22,3 +26,23 @@ function setNavDividers() {
 
 window.addEventListener("load", setNavDividers);
 window.addEventListener("resize", setNavDividers);
+
+if (document.querySelector(".results__slider") && window.Swiper) {
+    new Swiper(".results__slider", {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        speed: 550,
+        navigation: {
+            prevEl: ".slider-nav__btn--prev",
+            nextEl: ".slider-nav__btn--next",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1.45,
+            },
+            1024: {
+                slidesPerView: 2.15,
+            },
+        },
+    });
+}

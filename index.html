@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мобильный адвокат</title>
     <link rel="stylesheet" href="./styles/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -500,55 +504,120 @@
           получает клиент.
         </p>
 
-        <div class="slider">
-          <div class="results__slide">
-            <div class="results__slide-img">
-              <img src="./img/slide-img.png" alt="" />
-            </div>
-            <h3>Получили постановление о возбуждении уголовного дела</h3>
+        <div class="slider results__slider swiper">
+          <div class="swiper-wrapper">
+            <article class="results__slide swiper-slide">
+              <div class="results__slide-img">
+                <img src="./img/slide-img.png" alt="" />
+              </div>
+              <h3>Получили постановление о возбуждении уголовного дела</h3>
 
-            <div class="results__paragraph">
-              <h4>Ситуация</h4>
-              <p>
-                После проверки правоохранительные органы возбудили уголовное
-                дело. Клиент не понимал, насколько серьёзна ситуация, какие
-                действия могут последовать дальше и какие риски необходимо
-                учитывать уже сейчас.
-              </p>
-            </div>
-            <div class="results__paragraph">
-              <h4>Ситуация</h4>
-              <p>
-                После проверки правоохранительные органы возбудили уголовное
-                дело. Клиент не понимал, насколько серьёзна ситуация, какие
-                действия могут последовать дальше и какие риски необходимо
-                учитывать уже сейчас.
-              </p>
-            </div>
-            <div class="results__paragraph">
-              <h4>Ситуация</h4>
-              <p>
-                После проверки правоохранительные органы возбудили уголовное
-                дело. Клиент не понимал, насколько серьёзна ситуация, какие
-                действия могут последовать дальше и какие риски необходимо
-                учитывать уже сейчас.
-              </p>
-            </div>
-            <div class="results__paragraph">
-              <h4>Ситуация</h4>
-              <p>
-                После проверки правоохранительные органы возбудили уголовное
-                дело. Клиент не понимал, насколько серьёзна ситуация, какие
-                действия могут последовать дальше и какие риски необходимо
-                учитывать уже сейчас.
-              </p>
-            </div>
-            <button class="results__slide-btn">Подробнее</button>
+              <div class="results__paragraph">
+                <h4>Ситуация</h4>
+                <p>
+                  После проверки правоохранительные органы возбудили уголовное
+                  дело. Клиент не понимал, насколько серьёзна ситуация, какие
+                  действия могут последовать дальше и какие риски необходимо
+                  учитывать уже сейчас.
+                </p>
+              </div>
+              <div class="results__paragraph">
+                <h4>Изучили</h4>
+                <p>
+                  — постановление о возбуждении уголовного дела;<br />
+                  — заявление;<br />
+                  — объяснения;<br />
+                  — имеющиеся документы по обстоятельствам дела.
+                </p>
+              </div>
+              <div class="results__paragraph">
+                <h4>Что показал разбор</h4>
+                <p>
+                  — оценили возможные направления развития дела;<br />
+                  — определили ключевые обстоятельства, которые могут повлиять
+                  на ход расследования.
+                </p>
+              </div>
+              <button class="results__slide-btn">Подробнее</button>
+            </article>
+
+            <article class="results__slide swiper-slide">
+              <div class="results__slide-img">
+                <img src="./img/slide-img.png" alt="" />
+              </div>
+              <h3>Уже работаете с адвокатом, но хотите второе мнение</h3>
+
+              <div class="results__paragraph">
+                <h4>Ситуация</h4>
+                <p>
+                  По делу уже работал адвокат, однако клиент сомневался в
+                  выбранной стратегии и хотел получить независимую оценку
+                  материалов.
+                </p>
+              </div>
+              <div class="results__paragraph">
+                <h4>Изучили</h4>
+                <p>
+                  — процессуальные документы;<br />
+                  — подготовленные процессуальные документы адвоката;<br />
+                  — судебные материалы;<br />
+                  — переписку по делу.
+                </p>
+              </div>
+              <div class="results__paragraph">
+                <h4>Что показал разбор</h4>
+                <p>
+                  — оценили выбранную стратегию;<br />
+                  — выявили вопросы, которые требуют дополнительного внимания.
+                </p>
+              </div>
+              <button class="results__slide-btn">Подробнее</button>
+            </article>
+
+            <article class="results__slide swiper-slide">
+              <h3>Проверили риски перед важным процессуальным шагом</h3>
+
+              <div class="results__paragraph">
+                <h4>Ситуация</h4>
+                <p>
+                  Клиенту нужно было понять, какие последствия может повлечь
+                  дальнейшее действие и какие документы стоит подготовить
+                  заранее.
+                </p>
+              </div>
+              <div class="results__paragraph">
+                <h4>Изучили</h4>
+                <p>
+                  — материалы обращения;<br />
+                  — имеющиеся доказательства;<br />
+                  — переписку с участниками дела;<br />
+                  — возможные варианты дальнейших действий.
+                </p>
+              </div>
+              <div class="results__paragraph">
+                <h4>Что показал разбор</h4>
+                <p>
+                  — обозначили основные риски;<br />
+                  — подготовили рекомендации по снижению негативных последствий.
+                </p>
+              </div>
+              <button class="results__slide-btn">Подробнее</button>
+            </article>
           </div>
+        </div>
+
+        <div class="slider-nav">
+          <button class="slider-nav__btn slider-nav__btn--prev" type="button">
+            <img src="./img/arrow-right.svg" alt="arrow">
+          </button>
+          <button class="slider-nav__btn slider-nav__btn--next" type="button">
+            <img src="./img/arrow-right.svg" alt="arrow">
+          </button>
         </div>
       </section>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
