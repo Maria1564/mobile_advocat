@@ -268,13 +268,15 @@ li {
   max-width: 576px;
 }
 
-.hero__actions {
+.hero__actions,
+.cta__actions {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.hero__btn {
+.hero__btn,
+.cta__btn {
   padding: 23px 28px;
   border-radius: 8px;
   background-color: #67edb7;
@@ -285,11 +287,13 @@ li {
   transition: background-color 0.5s;
 }
 
-.hero__btn:hover {
+.hero__btn:hover,
+.cta__btn:hover {
   background-color: #9effd8;
 }
 
-.hero__link {
+.hero__link,
+.cta__link {
   height: 64px;
   display: flex;
   align-items: center;
@@ -305,7 +309,8 @@ li {
   transition: background-color 0.5s;
 }
 
-.hero__link:hover {
+.hero__link:hover,
+.cta__link:hover {
   background-color: #e5e2e2;
 }
 
@@ -1017,4 +1022,28 @@ li {
 .faq__item_active .faq__answer {
   max-height: 500px;
   padding: 12px 13px;
+}
+
+.cta {
+  background-image: url(../img/bg-2.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta__inner {
+  padding-bottom: 92px;
+  align-items: start;
+}
+
+.cta__title,
+.cta__description {
+  max-width: 1000px;
+}
+
+.cta__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -3%;
 }
