@@ -662,6 +662,12 @@ li {
 
 .pricing {
   align-items: start;
+  gap: 8px;
+}
+
+.pricing__title {
+  margin-bottom: calc(42px - 8px);
+  max-width: 520px;
 }
 
 .pricing__service {
@@ -677,7 +683,6 @@ li {
     ),
     #050b09;
   background-clip: padding-box;
-  margin-bottom: 8px;
 }
 
 .service__top {
@@ -742,4 +747,68 @@ li {
 .service__btn {
   padding-right: 38px;
   padding-left: 38px;
+}
+
+
+.pricing__preview {
+  border: 1px solid #494844;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+  background-color: #161918;
+  border-radius: 22px;
+}
+
+.preview__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "document text text";
+  gap: 10px;
+}
+
+
+.preview__img {
+  grid-area: document;
+  position: absolute;
+  top: -32px;
+  left: 5px;
+  width: 390px;
+  height: auto;
+  transform: rotate(22deg);
+}
+
+.preview__wrapper {
+  grid-area: text;
+}
+
+.preview__content {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.preview__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: -3%;
+  color: #9EA3A4;
+}
+
+.preview__button {
+  padding: 10px 20px;
+  border: 1px solid #67EDB7;
+  box-shadow: 0 6px 15.6px 0 #67EDB740;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #67EDB7;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
 }
