@@ -27,6 +27,8 @@ function setNavDividers() {
 window.addEventListener("load", setNavDividers);
 window.addEventListener("resize", setNavDividers);
 
+
+//slider 
 if (document.querySelector(".results__slider") && window.Swiper) {
     new Swiper(".results__slider", {
         slidesPerView: 1,
@@ -46,3 +48,21 @@ if (document.querySelector(".results__slider") && window.Swiper) {
         },
     });
 }
+
+
+//FAQ
+const faqs = document.querySelectorAll(".faq__item");
+
+faqs.forEach((faq) => {
+    faq.addEventListener("click", () => {
+        const isActive = faq.classList.contains("faq__item_active");
+
+        faqs.forEach((item) => {
+            item.classList.remove("faq__item_active");
+        });
+
+        if (!isActive) {
+            faq.classList.add("faq__item_active");
+        }
+    });
+});
