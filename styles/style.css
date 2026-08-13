@@ -385,12 +385,9 @@ li {
 
 .comparison__cards {
   max-width: 954px;
-  background-color: #0a0e0d70;
-  backdrop-filter: blur(12.3px);
   margin: 0 auto;
-  border-radius: 24px;
-  padding: 4px;
   display: flex;
+  gap: 8px;
 }
 
 .comparison__card {
@@ -400,19 +397,21 @@ li {
   display: flex;
   flex-direction: column;
   gap: 34px;
+  border-radius: 22px;
+
+  background: #0a0e0db5
 }
 
 .comparison__card_active {
-  background-color: #0a0e0d;
-  border-radius: 22px;
   border: 1px solid #67edb7;
   box-shadow: 0 6px 15px 0 #67edb740;
+  background: linear-gradient(180deg, #0a0e0db5, transparent);
 }
 
 .comparison__box {
   width: 40px;
   height: 40px;
-  background-color: #a1a1a1;
+  background-color: #2B2B2B;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -636,6 +635,10 @@ li {
   align-items: start;
 }
 
+.confidentiality__title {
+    text-align: start;
+}
+
 .confidentiality__description {
   font-weight: 500;
   font-size: 16px;
@@ -689,6 +692,7 @@ li {
 .pricing__title {
   margin-bottom: calc(42px - 8px);
   max-width: 520px;
+  text-align: start;
 }
 
 .pricing__service {
@@ -1132,6 +1136,12 @@ li {
 
 /* media query */
 
+@media (max-width: 1220px) {
+    .confidentiality__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 1080px) {
     .header__nav {
         display: none;
@@ -1175,6 +1185,10 @@ li {
     .cases__card {
         height: auto;
         max-height: 320px;
+    }
+
+    .comparison__cards {
+        flex-direction: column-reverse;
     }
 }
 
@@ -1231,6 +1245,43 @@ li {
         padding: 26px 0;
     }
     
+    .comparison__text {
+        margin: 32px auto;
+        font-size: 14px;
+    }
+
+    .comparison {
+        padding: 50px 0;
+    }
+
+    .steps__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .steps__item-title {
+        font-size: 20px;
+    }
+
+    .steps__item-text {
+        font-size: 14px;
+    }
+
+    .confidentiality__list {
+        grid-template-columns: 1fr;
+    }
+
+    .confidentiality__description {
+        font-size: 14px;
+    }
+
+    .confidentiality__card-title {
+        margin-bottom: 22px;
+    }
+
+    .confidentiality__card {
+        padding: 16px 16px 32px;
+    }
 }
 
 @media (max-width:  500px) {
@@ -1242,6 +1293,8 @@ li {
         height: auto;
         max-height: 180px;
     }
+
+   
 }
 
 @media (max-width: 400px) {
@@ -1255,5 +1308,9 @@ li {
         "scenario"
         "actions"
         "note";
+    }
+
+     .steps__grid {
+        grid-template-columns: 1fr;
     }
 }
