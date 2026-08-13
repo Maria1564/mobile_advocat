@@ -239,6 +239,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  position: relative;
 }
 
 .hero__image {
@@ -246,12 +247,28 @@ li {
   max-width: 720px;
   aspect-ratio: 720/517;
   height: auto;
+  position: relative;
 }
 
 .hero__image > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  position: relative;
+  z-index: 3;
+}
+
+.hero__image .circle {
+    position: absolute;
+    width: 50px;
+    height: 206px;
+    border-radius: 50%;
+    background-color: #67EDB7;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    filter: blur(120px);
 }
 
 .hero__content {
@@ -302,6 +319,7 @@ li {
   height: 64px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   padding: 0 18px;
   color: #212127;
@@ -742,6 +760,11 @@ li {
   grid-area: list-right;
 }
 
+.service__all-list,
+.service__main {
+    display: contents;
+}
+
 .service__bottom {
   margin-top: 32px;
   display: flex;
@@ -798,7 +821,26 @@ li {
   left: 5px;
   width: 390px;
   height: auto;
-  transform: rotate(22deg);
+  transform: rotate(4deg);
+}
+
+.preview__img > img {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.preview__img .circle {
+    position: absolute;
+    width: 271px;
+    height: 105px;
+    background-color: #67EDB7;
+    top: 70px;
+    left: 61px;
+    z-index: 2;
+    filter: blur(80px);
 }
 
 .preview__wrapper {
@@ -862,7 +904,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 24px;
+  gap: 32px;
   height: 675px;
   overflow: hidden;
   position: relative;
@@ -889,7 +931,7 @@ li {
 .results__paragraph {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 22px;
 }
 
 .results__paragraph p {
@@ -1051,6 +1093,7 @@ li {
 .cta__title,
 .cta__description {
   max-width: 1000px;
+  text-align: start;
 }
 
 .cta__description {
@@ -1123,6 +1166,14 @@ li {
   color: #838383;
 }
 
+.footer__dev_mobile {
+    display: none;
+}
+
+.footer__politics-other {
+    display: contents;
+}
+
 .mobile-menu {
    display: none;
    flex-direction: column;
@@ -1136,9 +1187,20 @@ li {
 
 /* media query */
 
+@media (max-width: 1370px) {
+    .hero__image {
+        position: absolute;
+        right: -140px;
+    }
+}
+
 @media (max-width: 1220px) {
     .confidentiality__list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero__image {
+        right: -280px;
     }
 }
 
@@ -1155,9 +1217,25 @@ li {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
+
+    .hero__image {
+        right: -327px;
+        top: 0;
+    }
 }
 
 @media (max-width: 1024px) {
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero__image {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
     .conclusion__card {
         gap: 22px;
     }
@@ -1175,6 +1253,38 @@ li {
     .conclusion__img > img {
         width: 360px; 
     }
+
+    .service__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .service__main,
+    .service__all-list {
+        display: block;
+    }
+
+    .service__all-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .service__main {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .preview__img {
+        position: relative;
+        width: 250px;
+    }
+
+    .footer__faq {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1190,9 +1300,45 @@ li {
     .comparison__cards {
         flex-direction: column-reverse;
     }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 32px;
+        margin-bottom: calc(32px - 24px);
+    }
+
+    .footer__faq {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .footer__dev {
+        display: none;
+    }
+
+    .footer__dev_mobile {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .footer__politics {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer__politics-other {
+        display: flex;
+        gap: 28px;
+    }
 }
 
 @media (max-width: 675px) {
+    h1 {
+        font-size: 32px;
+    }
+    
     h2 {
         font-size: 32px;
     }
@@ -1209,6 +1355,14 @@ li {
     .header-top__link,
     .header-top__btn {
         display: none;
+    }
+
+    .hero__content {
+        gap: 32px;
+    }
+
+    .benefits {
+        margin-top: 40px;
     }
 
     .benefits__list {
@@ -1282,6 +1436,59 @@ li {
     .confidentiality__card {
         padding: 16px 16px 32px;
     }
+
+    .service__all-list {
+        padding: 21px 0;
+        border-top: 1px solid #272727;
+        border-bottom: 1px solid #272727;
+    }
+    
+    .service__top {
+        padding: 0;
+        border: none;
+    }
+
+    .service__bottom {
+        flex-direction: column;
+        align-items: start;
+        gap: 32px;
+    }
+
+    .service__btn {
+        width: 100%;
+    }
+
+     .preview__img {
+        width: 200px;
+    }
+
+    .preview__img .circle {
+        top: 50px;
+        left: 2px;
+    }
+
+    .pricing__title {
+        margin-bottom: 0
+    }
+
+    .results__description {
+        font-size: 14px;
+    }
+
+    .results__slide {
+        padding: 22px;
+    }
+
+    .cta__description {
+        font-size: 16px;
+    }
+
+    .cta__actions,
+    .hero__actions {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
 }
 
 @media (max-width:  500px) {
@@ -1294,7 +1501,12 @@ li {
         max-height: 180px;
     }
 
-   
+    .preview__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "document" "text";
+    gap: 10px;
+}
 }
 
 @media (max-width: 400px) {

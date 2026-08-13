@@ -48,7 +48,7 @@
         </nav>
       </header>
 
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="hero__content">
           <h1>
             Разберём документы, оценим риски <br />
@@ -72,8 +72,9 @@
         </div>
         <div class="hero__image">
           <img src="./img/bg.png" alt="bg" />
+          <div class="circle"></div>
         </div>
-      </section> -->
+      </section>
 
       <section class="benefits">
         <div class="benefits__list">
@@ -449,11 +450,14 @@
         <div class="pricing__service">
           <div class="service__top">
             <div class="service__grid">
-              <span class="badge service__icon">
+              <div class="service__main">
+                <span class="badge service__icon">
                 <img src="./img/list-search.svg" alt="" />
               </span>
               <h3 class="service__title">Разбор юридической ситуации</h3>
-              <ul class="list service__list_left">
+              </div>
+              <div class="service__all-list">
+                <ul class="list service__list_left">
                 <li class="list-item">Предварительное изучение обращения</li>
                 <li class="list-item">Письменная оценка ситуации</li>
                 <li class="list-item">Возможные сценарии развития</li>
@@ -463,6 +467,7 @@
                 <li class="list-item">Описание основных рисков</li>
                 <li class="list-item">Рекомендации по дальнейшим действиямы</li>
               </ul>
+              </div>
             </div>
           </div>
           <div class="service__bottom">
@@ -479,7 +484,10 @@
 
         <div class="pricing__preview">
           <div class="preview__grid">
-            <img src="./img/document.png" alt="document" class="preview__img" />
+            <div class="preview__img">
+                <img src="./img/document.png" alt="document" />
+                <div class="circle"></div>
+            </div>
 
             <div class="preview__wrapper">
               <div class="preview__content">
@@ -720,10 +728,12 @@
             <span class="footer__politics-item"
               >© 2026, ИП Иванов И.И. Все права защищены.</span
             >
-            <a href="#" class="footer__politics-item"
+            <div class="footer__politics-other">
+                <a href="#" class="footer__politics-item"
               >Политика конфиденциальности</a
             >
             <span class="footer__politics-item">ФЗ 153</span>
+            </div>
           </div>
           <a href="#" class="footer__dev">Разработчик</a>
         </div>
@@ -732,6 +742,7 @@
           информация и подготовленные заключения носят информационный характер и
           не являются гарантией достижения определённого правового результата.
         </div>
+        <a href="#" class="footer__dev_mobile">Разработчик</a>
       </div>
     </footer>
 
