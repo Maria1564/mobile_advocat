@@ -1,3 +1,7 @@
+html {
+  font-family: "Manrope", sans-serif;
+}
+
 body {
   background-color: #0a0e0d;
   width: 100%;
@@ -54,6 +58,7 @@ button {
   cursor: pointer;
   outline: none;
   border: none;
+  font-family: "Manrope", sans-serif;
 }
 
 li {
@@ -183,7 +188,7 @@ li {
 }
 
 .header-top__btn {
-  padding: 15px 20px;
+    padding: 0 20px;
   border-radius: 8px;
   cursor: pointer;
   background-color: #67edb7;
@@ -280,7 +285,7 @@ li {
 }
 
 .hero__span {
-  color: #4caa91;
+  color: #4CD4B0;
 }
 
 .hero__text {
@@ -817,9 +822,9 @@ li {
 .preview__img {
   grid-area: document;
   position: absolute;
-  top: -32px;
-  left: 5px;
-  width: 390px;
+    top: 29px;
+    left: 45px;
+    width: 341px;
   height: auto;
   transform: rotate(4deg);
 }
