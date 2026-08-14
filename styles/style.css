@@ -507,22 +507,74 @@ li {
   height: 428px;
 }
 
+.cases__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  opacity: 20%;
+  z-index: 0;
+  transition: all .5s;
+}
+
+.cases__card:hover:after {
+  opacity: 77%;
+}
+
 .cases__card-img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
-.cases__link {
+.cases__wrapper {
   position: absolute;
-  z-index: 10;
-  bottom: 26px;
   left: 26px;
+  right: 26px;
+  bottom: 26px;
+  z-index: 1;
+}
+
+.cases__head {
   display: flex;
   flex-direction: column;
   gap: 28px;
+}
+
+.cases__hidden {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transform: translateY(100%);
+  transition:
+    grid-template-rows .5s,
+    opacity .3s,
+    transform .5s,
+    margin-top .5s;
+}
+
+.cases__hidden-inner {
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 28px;
+}
+
+.cases__card:hover .cases__hidden {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 28px;
+}
+
+.cases__btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .cases__icon {
@@ -1285,6 +1337,15 @@ li {
   .conclusion__img>img {
     width: 360px;
   }
+  
+  .cases__head,
+  .cases__hidden-inner {
+    gap: 20px
+  }
+
+  .cases__hidden {
+    margin-top: 20px;
+  }
 
   .service__grid {
     display: flex;
@@ -1416,16 +1477,16 @@ li {
     font-size: 20px;
   }
 
-  .cases__link {
-    gap: 22px;
-  }
+   .cases__list-item {
+      font-size: 14px;
+   } 
 
   .conclusion__img>img {
     width: 243px;
   }
 
   .conclusion__img {
-    margin-bottom: 32px;  
+    margin-bottom: 32px;
   }
 
   .conclusion__card {
@@ -1535,10 +1596,10 @@ li {
 
 @media (max-width: 500px) {
 
-  .cases__card {
+  /* .cases__card {
     height: auto;
     max-height: 180px;
-  }
+  } */
 
   .preview__grid {
     display: grid;

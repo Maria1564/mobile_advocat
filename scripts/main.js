@@ -27,7 +27,6 @@ function setNavDividers() {
 window.addEventListener("load", setNavDividers);
 window.addEventListener("resize", setNavDividers);
 
-
 //slider 
 if (document.querySelector(".results__slider") && window.Swiper) {
     const resultsSection = document.querySelector(".results");
