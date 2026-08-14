@@ -1,553 +1,529 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Мобильный адвокат</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="header-top">
-          <a href="#" class="header-top__logo-wrapper logo">
-            <div class="logo__box"></div>
-            <div class="logo__text">Мобильный адвокат</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мобильный адвокат</title>
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-top">
+        <a href="#" class="header-top__logo-wrapper logo">
+          <div class="logo__box"></div>
+          <div class="logo__text">Мобильный адвокат</div>
+        </a>
+
+        <div class="header-top__actions">
+          <a href="#" class="header-top__link">
+            <img src="./img/brand-telegram.svg" alt="telegram" />
+            <span>Перейти в Telegram</span>
           </a>
-
-          <div class="header-top__actions">
-            <a href="#" class="header-top__link">
-              <img src="./img/brand-telegram.svg" alt="telegram" />
-              <span>Перейти в Telegram</span>
-            </a>
-            <button class="header-top__btn">Описать ситуацию</button>
-            <div class="mobile-menu">
-                <img src="./img/menu.svg" alt="menu">
-            </div>
+          <button class="header-top__btn">Описать ситуацию</button>
+          <div class="mobile-menu">
+            <img src="./img/menu.svg" alt="menu">
           </div>
         </div>
-        <nav class="header__nav nav">
-          <a href="#" class="nav__link">Когда обращаться</a>
-          <a href="#" class="nav__link">Что вы получите</a>
-          <a href="#" class="nav__link">Как проходит работа</a>
-          <a href="#" class="nav__link">Стоимость</a>
-          <a href="#" class="nav__link">Примеры ситуаций</a>
-          <a href="#" class="nav__link">FAQ</a>
-        </nav>
+      </div>
+      <nav class="header__nav nav">
+        <a href="#" class="nav__link">Когда обращаться</a>
+        <a href="#" class="nav__link">Что вы получите</a>
+        <a href="#" class="nav__link">Как проходит работа</a>
+        <a href="#" class="nav__link">Стоимость</a>
+        <a href="#" class="nav__link">Примеры ситуаций</a>
+        <a href="#" class="nav__link">FAQ</a>
+      </nav>
 
-        <div class="mobile">
-          <div class="mobile__wrapper">
-            <h2 class="mobile__title">Меню</h2>
+      <div class="mobile">
+        <div class="mobile__wrapper">
+          <h2 class="mobile__title">Меню</h2>
 
-            <ul class="mobile__list">
-              <li><a href="#" class="mobile__list-item">Когда обращаться</a></li>
-              <li><a href="#" class="mobile__list-item">Как проходит работа</a></li>
-              <li><a href="#" class="mobile__list-item">Примеры ситуаций</a></li>
-              <li><a href="#" class="mobile__list-item">Что вы получите</a></li>
-              <li><a href="#" class="mobile__list-item">Стоимость</a></li>
-            </ul>
+          <ul class="mobile__list">
+            <li><a href="#" class="mobile__list-item">Когда обращаться</a></li>
+            <li><a href="#" class="mobile__list-item">Как проходит работа</a></li>
+            <li><a href="#" class="mobile__list-item">Примеры ситуаций</a></li>
+            <li><a href="#" class="mobile__list-item">Что вы получите</a></li>
+            <li><a href="#" class="mobile__list-item">Стоимость</a></li>
+          </ul>
 
-            <div class="mobile__actions">
-              <button class="mobile__btn">Отправить описание</button>
+          <div class="mobile__actions">
+            <button class="mobile__btn">Отправить описание</button>
             <a href="#" class="mobile__link">
               <img src="./img/telegram-black.svg" alt="telegram" />
               <span>Продолжить в Telegram</span>
             </a>
+          </div>
+
+          <div class="mobile__info">
+            Сервис является информационно-справочной службой. Представленная
+            информация и подготовленные заключения носят информационный характер и
+            не являются гарантией достижения определённого правового результата.
+          </div>
+          <div class="mobile__footer">
+            <p class="mobile__copyright">
+              © 2026, ИП Иванов И.И. Все права защищены.
+            </p>
+
+            <div class="mobile__legal">
+              <a href="#" class="mobile__legal-link">Политика конфиденциальности</a>
+              <a href="#" class="mobile__legal-link">ФЗ 153</a>
             </div>
 
-            <div class="mobile__info">
-              Сервис является информационно-справочной службой. Представленная
-              информация и подготовленные заключения носят информационный характер и
-              не являются гарантией достижения определённого правового результата.
-            </div>
-            <div class="mobile__footer">
-              <p class="mobile__copyright">
-                © 2026, ИП Иванов И.И. Все права защищены.
-              </p>
-
-              <div class="mobile__legal">
-                <a href="#" class="mobile__legal-link">Политика конфиденциальности</a>
-                <a href="#" class="mobile__legal-link">ФЗ 153</a>
-              </div>
-
-              <a href="#" class="mobile__developer">Разработчик</a>
-            </div>
+            <a href="#" class="mobile__developer">Разработчик</a>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <section class="hero">
-        <div class="hero__content">
-          <h1>
-            Разберём документы, оценим риски <br />
-            <span class="hero__span">и возможные сценарии развития дела</span>
-          </h1>
+    <section class="hero">
+      <div class="hero__content">
+        <h1>
+          Разберём документы, оценим риски <br />
+          <span class="hero__span">и возможные сценарии развития дела</span>
+        </h1>
 
-          <p class="hero__text">
-            Изучим материалы уголовного, гражданского или административного дела
-            и подготовим письменное аналитическое заключение: что происходит,
-            какие есть риски и на что обратить внимание при дальнейших
-            действиях.
-          </p>
+        <p class="hero__text">
+          Изучим материалы уголовного, гражданского или административного дела
+          и подготовим письменное аналитическое заключение: что происходит,
+          какие есть риски и на что обратить внимание при дальнейших
+          действиях.
+        </p>
 
-          <div class="hero__actions">
-            <button class="btn hero__btn">Получить предварительную оценку</button>
-            <a href="#" class="hero__link">
-              <img src="./img/telegram-black.svg" alt="telegram" />
-              <span>Перейти в Telegram</span>
-            </a>
-          </div>
+        <div class="hero__actions">
+          <button class="btn hero__btn">Получить предварительную оценку</button>
+          <a href="#" class="hero__link">
+            <img src="./img/telegram-black.svg" alt="telegram" />
+            <span>Перейти в Telegram</span>
+          </a>
         </div>
-        <div class="hero__image">
-          <img src="./img/bg.png" alt="bg" />
-          <div class="circle"></div>
-        </div>
-      </section>
+      </div>
+      <div class="hero__image">
+        <img src="./img/bg.png" alt="bg" />
+        <div class="circle"></div>
+      </div>
+    </section>
 
-      <section class="benefits">
-        <div class="benefits__list">
-          <div class="benefits__item">
-            <img
-              src="./img/award-filled.svg"
-              alt="award"
-              class="benefits__icon"
-            />
-            <div class="benefits__content">
-              <h3 class="benefits__title">Практический опыт</h5>
+    <section class="benefits">
+      <div class="benefits__list">
+        <div class="benefits__item">
+          <img src="./img/award-filled.svg" alt="award" class="benefits__icon" />
+          <div class="benefits__content">
+            <h3 class="benefits__title">Практический опыт</h5>
               <p class="benefits__text">
                 Заключение готовится специалистами, имеющими практический опыт
                 работы с юридическими делами.
               </p>
-            </div>
           </div>
-          <div class="benefits__item">
-            <img
-              src="./img/file-filled.svg"
-              alt="file"
-              class="benefits__icon"
-            />
-            <div class="benefits__content">
-              <h3 class="benefits__title">Письменный результат</h5>
+        </div>
+        <div class="benefits__item">
+          <img src="./img/file-filled.svg" alt="file" class="benefits__icon" />
+          <div class="benefits__content">
+            <h3 class="benefits__title">Письменный результат</h5>
               <p class="benefits__text">
                 Вы получаете не устную консультацию, а структурированное
                 аналитическое заключение.
               </p>
-            </div>
           </div>
-          <div class="benefits__item">
-            <img
-              src="./img/clock-filled.svg"
-              alt="clock"
-              class="benefits__icon"
-            />
-            <div class="benefits__content">
-              <h3 class="benefits__title">Подготовка за 3–5 дней</h5>
+        </div>
+        <div class="benefits__item">
+          <img src="./img/clock-filled.svg" alt="clock" class="benefits__icon" />
+          <div class="benefits__content">
+            <h3 class="benefits__title">Подготовка за 3–5 дней</h5>
               <p class="benefits__text">
                 Фиксированный срок подготовки после получения необходимых
                 материалов.
               </p>
-            </div>
           </div>
-          <div class="benefits__item">
-            <img
-              src="./img/shield-check-filled.svg"
-              alt="shield"
-              class="benefits__icon"
-            />
-            <div class="benefits__content">
-              <h3 class="benefits__title">Конфиденциальность</h5>
+        </div>
+        <div class="benefits__item">
+          <img src="./img/shield-check-filled.svg" alt="shield" class="benefits__icon" />
+          <div class="benefits__content">
+            <h3 class="benefits__title">Конфиденциальность</h5>
               <p class="benefits__text">
                 Документы доступны только специалистам, участвующим в подготовке
                 заключения.
               </p>
-            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section cases">
-        <h2 class="cases__title">В каких ситуациях стоит обратиться</h2>
-
-        <div class="cases__list">
-          <article class="cases__card">
-            <img src="./img/case-1.png" alt="" class="cases__card-img" />
-            <div class="cases__wrapper">
-              <div class="cases__head">
-                <span class="cases__icon">
-                  <img src="./img/arrow-right.svg" alt="arrow right" />
-                </span>
-                <span class="cases__text">Уголовное дело</span>
-              </div>
-
-              <div class="cases__hidden">
-                <div class="cases__hidden-inner">
-                  <ul class="list">
-                    <li class="list-item cases__list-item">Поступило заявление в правоохранительные органы</li>
-                    <li class="list-item cases__list-item">Вызывают на опрос или допрос</li>
-                    <li class="list-item cases__list-item">Возбуждено уголовное дело</li>
-                    <li class="list-item cases__list-item">Предъявлено обвинение</li>
-                    <li class="list-item cases__list-item">Дело передано в суд</li>
-                  </ul>
-
-                  <button class="btn cases__btn">Описать ситуацию</button>
-                </div>
-                
-              </div>
-            </div>
-          </article>
-          <article class="cases__card">
-            <img src="./img/case-2.png" alt="" class="cases__card-img" />
-            <div class="cases__wrapper">
-              <div class="cases__head">
-                <span class="cases__icon">
-                  <img src="./img/arrow-right.svg" alt="arrow right" />
-                </span>
-                <span class="cases__text">Гражданско-правовой спор</span>
-              </div>
-
-              <div class="cases__hidden">
-                <div class="cases__hidden-inner">
-                  <ul class="list">
-                    <li class="list-item cases__list-item">Получили исковое заявление</li>
-                    <li class="list-item cases__list-item">Планируете обратиться в суд</li>
-                    <li class="list-item cases__list-item">Хотите оценить перспективы спора</li>
-                    <li class="list-item cases__list-item">Получили решение суда</li>
-                    <li class="list-item cases__list-item">Решаете, стоит ли подавать жалобу</li>
-                  </ul>
-
-                  <button class="btn cases__btn">Описать ситуацию</button>
-                </div>
-                
-              </div>
-            </div>
-          </article>
-          <article class="cases__card">
-            <img src="./img/case-3.png" alt="" class="cases__card-img" />
-            <div class="cases__wrapper">
-              <div class="cases__head">
-                <span class="cases__icon">
-                  <img src="./img/arrow-right.svg" alt="arrow right" />
-                </span>
-                <span class="cases__text">Проверка работы представителя</span>
-              </div>
-
-              <div class="cases__hidden">
-                <div class="cases__hidden-inner">
-                  <ul class="list">
-                    <li class="list-item cases__list-item">Уже работаете с адвокатом или юристом</li>
-                    <li class="list-item cases__list-item">Не понимаете выбранную стратегию</li>
-                    <li class="list-item cases__list-item">Хотите получить независимое второе мнение</li>
-                    <li class="list-item cases__list-item">Сомневаетесь, учтены ли основные риски</li>
-                  </ul>
-
-                  <button class="btn cases__btn">Описать ситуацию</button>
-                </div>
-                
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <button class="btn cases__btn">Обсудить мою ситуацию</button>
-      </section>
-
-      <section class="section conclusion">
-        <h2 class="conclusion__title">Что будет в письменном заключении</h2>
-
-        <div class="conclusion__grid">
-          <div class="conclusion__img">
-            <img src="./img/document.png" alt="document" />
-          </div>
-
-          <article class="conclusion__card conclusion__card--situation">
-            <span class="badge conclusion__card-icon">
-              <img src="./img/list-search.svg" alt="search" />
-            </span>
-            <h3 class="conclusion__card-title">Разбор исходной ситуации</h3>
-            <p class="conclusion__card-text">
-              Специалист изучит предоставленные документы и кратко зафиксирует
-              основные обстоятельства дела.
-            </p>
-          </article>
-
-          <article class="conclusion__card conclusion__card--risks">
-            <span class="badge conclusion__card-icon">
-              <img src="./img/shield-search.svg" alt="shield search" />
-            </span>
-            <h3 class="conclusion__card-title">Основные риски</h3>
-            <p class="conclusion__card-text">
-              Клиент увидит, какие обстоятельства могут повлиять на дело и какие
-              негативные последствия необходимо учитывать.
-            </p>
-          </article>
-
-          <article class="conclusion__card conclusion__card--scenario">
-            <span class="badge conclusion__card-icon">
-              <img src="./img/list-numbers.svg" alt="list" />
-            </span>
-            <h3 class="conclusion__card-title">Оценка возможных сценариев</h3>
-            <p class="conclusion__card-text">
-              В заключении будут описаны вероятные варианты дальнейшего развития
-              ситуации с учётом представленных материалов.
-            </p>
-          </article>
-
-          <article class="conclusion__card conclusion__card--actions">
-            <span class="badge conclusion__card-icon">
-              <img
-                src="./img/player-track-next-filled.svg"
-                alt="player track"
-              />
-            </span>
-            <h3 class="conclusion__card-title">
-              Рекомендации по дальнейшим действиям
-            </h3>
-            <p class="conclusion__card-text">
-              Будут обозначены вопросы, на которые стоит обратить внимание, и
-              возможные действия для снижения рисков.
-            </p>
-          </article>
-
-          <div class="conclusion__note">
-            <img src="./img/i.svg" alt="i" />
-            <p class="conclusion__note-text">
-              Заключение носит аналитический характер и не является гарантией
-              конкретного судебного или процессуального результата.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="comparison">
-      <div class="container">
-        <h2 class="comparison__title">
-          Не замена адвоката, <br />
-          <span>а независимый взгляд на ситуацию</span>
-        </h2>
-        <p class="comparison__text">
-          Услуга подойдёт, когда необходимо сначала разобраться в ситуации,
-          оценить основные риски или проверить уже выбранную стратегию. Вы
-          получаете письменный разбор, с которым сможете принимать дальнейшие
-          решения и предметно обсуждать дело со своим адвокатом или
-          представителем.
-        </p>
-
-        <div class="comparison__cards">
-          <article class="comparison__card comparison__card_active">
-            <div class="comparison__box">
-              <img src="./img/check.svg" alt="check" />
-            </div>
-            <h3 class="comparison__card-tite">
-              Аналитическое <br />
-              заключение
-            </h3>
-            <ul class="list">
-              <li class="list-item">Результат остаётся в письменном виде</li>
-              <li class="list-item">Анализируются предоставленные документы</li>
-              <li class="list-item">Специалист отдельно изучает материалы</li>
-              <li class="list-item">
-                Цель — оценка ситуации, рисков и сценариев
-              </li>
-            </ul>
-            <button class="comparison__btn">
-              Узнать, подходит ли мне услуга
-            </button>
-          </article>
-          <article class="comparison__card">
-            <div class="comparison__box">
-              <img src="./img/question-mark.svg" alt="question" />
-            </div>
-            <h3 class="comparison__card-tite">
-              Обычная первичная <br />
-              консультация
-            </h3>
-            <ul class="list">
-              <li class="list-item">Часто проходит устно</li>
-              <li class="list-item">Может основываться на кратком описании</li>
-              <li class="list-item">Ответы даются во время разговора</li>
-              <li class="list-item">Основная цель — консультация</li>
-            </ul>
-          </article>
         </div>
       </div>
     </section>
 
+    <section class="section cases">
+      <h2 class="cases__title">В каких ситуациях стоит обратиться</h2>
+
+      <div class="cases__list">
+        <article class="cases__card">
+          <img src="./img/case-1.png" alt="" class="cases__card-img" />
+          <div class="cases__wrapper">
+            <div class="cases__head">
+              <span class="cases__icon">
+                <img src="./img/arrow-right.svg" alt="arrow right" />
+              </span>
+              <span class="cases__text">Уголовное дело</span>
+            </div>
+
+            <div class="cases__hidden">
+              <div class="cases__hidden-inner">
+                <ul class="list">
+                  <li class="list-item cases__list-item">Поступило заявление в правоохранительные органы</li>
+                  <li class="list-item cases__list-item">Вызывают на опрос или допрос</li>
+                  <li class="list-item cases__list-item">Возбуждено уголовное дело</li>
+                  <li class="list-item cases__list-item">Предъявлено обвинение</li>
+                  <li class="list-item cases__list-item">Дело передано в суд</li>
+                </ul>
+
+                <button class="btn cases__btn">Описать ситуацию</button>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="cases__card">
+          <img src="./img/case-2.png" alt="" class="cases__card-img" />
+          <div class="cases__wrapper">
+            <div class="cases__head">
+              <span class="cases__icon">
+                <img src="./img/arrow-right.svg" alt="arrow right" />
+              </span>
+              <span class="cases__text">Гражданско-правовой спор</span>
+            </div>
+
+            <div class="cases__hidden">
+              <div class="cases__hidden-inner">
+                <ul class="list">
+                  <li class="list-item cases__list-item">Получили исковое заявление</li>
+                  <li class="list-item cases__list-item">Планируете обратиться в суд</li>
+                  <li class="list-item cases__list-item">Хотите оценить перспективы спора</li>
+                  <li class="list-item cases__list-item">Получили решение суда</li>
+                  <li class="list-item cases__list-item">Решаете, стоит ли подавать жалобу</li>
+                </ul>
+
+                <button class="btn cases__btn">Описать ситуацию</button>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="cases__card">
+          <img src="./img/case-3.png" alt="" class="cases__card-img" />
+          <div class="cases__wrapper">
+            <div class="cases__head">
+              <span class="cases__icon">
+                <img src="./img/arrow-right.svg" alt="arrow right" />
+              </span>
+              <span class="cases__text">Проверка работы представителя</span>
+            </div>
+
+            <div class="cases__hidden">
+              <div class="cases__hidden-inner">
+                <ul class="list">
+                  <li class="list-item cases__list-item">Уже работаете с адвокатом или юристом</li>
+                  <li class="list-item cases__list-item">Не понимаете выбранную стратегию</li>
+                  <li class="list-item cases__list-item">Хотите получить независимое второе мнение</li>
+                  <li class="list-item cases__list-item">Сомневаетесь, учтены ли основные риски</li>
+                </ul>
+
+                <button class="btn cases__btn">Описать ситуацию</button>
+              </div>
+
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="btn cases__btn">Обсудить мою ситуацию</button>
+    </section>
+
+    <section class="section conclusion">
+      <h2 class="conclusion__title">Что будет в письменном заключении</h2>
+
+      <div class="conclusion__grid">
+        <div class="conclusion__img">
+          <img src="./img/document.png" alt="document" />
+        </div>
+
+        <article class="conclusion__card conclusion__card--situation">
+          <span class="badge conclusion__card-icon">
+            <img src="./img/list-search.svg" alt="search" />
+          </span>
+          <h3 class="conclusion__card-title">Разбор исходной ситуации</h3>
+          <p class="conclusion__card-text">
+            Специалист изучит предоставленные документы и кратко зафиксирует
+            основные обстоятельства дела.
+          </p>
+        </article>
+
+        <article class="conclusion__card conclusion__card--risks">
+          <span class="badge conclusion__card-icon">
+            <img src="./img/shield-search.svg" alt="shield search" />
+          </span>
+          <h3 class="conclusion__card-title">Основные риски</h3>
+          <p class="conclusion__card-text">
+            Клиент увидит, какие обстоятельства могут повлиять на дело и какие
+            негативные последствия необходимо учитывать.
+          </p>
+        </article>
+
+        <article class="conclusion__card conclusion__card--scenario">
+          <span class="badge conclusion__card-icon">
+            <img src="./img/list-numbers.svg" alt="list" />
+          </span>
+          <h3 class="conclusion__card-title">Оценка возможных сценариев</h3>
+          <p class="conclusion__card-text">
+            В заключении будут описаны вероятные варианты дальнейшего развития
+            ситуации с учётом представленных материалов.
+          </p>
+        </article>
+
+        <article class="conclusion__card conclusion__card--actions">
+          <span class="badge conclusion__card-icon">
+            <img src="./img/player-track-next-filled.svg" alt="player track" />
+          </span>
+          <h3 class="conclusion__card-title">
+            Рекомендации по дальнейшим действиям
+          </h3>
+          <p class="conclusion__card-text">
+            Будут обозначены вопросы, на которые стоит обратить внимание, и
+            возможные действия для снижения рисков.
+          </p>
+        </article>
+
+        <div class="conclusion__note">
+          <img src="./img/i.svg" alt="i" />
+          <p class="conclusion__note-text">
+            Заключение носит аналитический характер и не является гарантией
+            конкретного судебного или процессуального результата.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="comparison">
     <div class="container">
-      <section class="section steps">
-        <h2>Как получить заключение</h2>
+      <h2 class="comparison__title">
+        Не замена адвоката, <br />
+        <span>а независимый взгляд на ситуацию</span>
+      </h2>
+      <p class="comparison__text">
+        Услуга подойдёт, когда необходимо сначала разобраться в ситуации,
+        оценить основные риски или проверить уже выбранную стратегию. Вы
+        получаете письменный разбор, с которым сможете принимать дальнейшие
+        решения и предметно обсуждать дело со своим адвокатом или
+        представителем.
+      </p>
 
-        <div class="steps__grid">
-          <article class="setps__item">
-            <div class="steps__item-top">
-              <div class="badge">
-                <img src="./img/message.svg" alt="message" />
-              </div>
-            </div>
-            <span class="steps__item-step">ШАГ 1</span>
-            <div class="steps__item-content">
-              <h3 class="steps__item-title">Опишите ситуацию</h3>
-              <p class="steps__item-text">
-                Кратко расскажите, что произошло и на какой стадии находится
-                дело.
-              </p>
-            </div>
-          </article>
+      <div class="comparison__cards">
+        <article class="comparison__card comparison__card_active">
+          <div class="comparison__box">
+            <img src="./img/check.svg" alt="check" />
+          </div>
+          <h3 class="comparison__card-tite">
+            Аналитическое <br />
+            заключение
+          </h3>
+          <ul class="list">
+            <li class="list-item">Результат остаётся в письменном виде</li>
+            <li class="list-item">Анализируются предоставленные документы</li>
+            <li class="list-item">Специалист отдельно изучает материалы</li>
+            <li class="list-item">
+              Цель — оценка ситуации, рисков и сценариев
+            </li>
+          </ul>
+          <button class="comparison__btn">
+            Узнать, подходит ли мне услуга
+          </button>
+        </article>
+        <article class="comparison__card">
+          <div class="comparison__box">
+            <img src="./img/question-mark.svg" alt="question" />
+          </div>
+          <h3 class="comparison__card-tite">
+            Обычная первичная <br />
+            консультация
+          </h3>
+          <ul class="list">
+            <li class="list-item">Часто проходит устно</li>
+            <li class="list-item">Может основываться на кратком описании</li>
+            <li class="list-item">Ответы даются во время разговора</li>
+            <li class="list-item">Основная цель — консультация</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-          <article class="setps__item">
-            <div class="steps__item-top">
-              <div class="badge">
-                <img src="./img/file.svg" alt="file" />
-              </div>
-            </div>
-            <span class="steps__item-step">ШАГ 2</span>
-            <div class="steps__item-content">
-              <h3 class="steps__item-title">Отправьте документы</h3>
-              <p class="steps__item-text">
-                Оператор уточнит, какие материалы необходимы для анализа.
-              </p>
-            </div>
-          </article>
+  <div class="container">
+    <section class="section steps">
+      <h2>Как получить заключение</h2>
 
-          <article class="setps__item">
-            <div class="steps__item-top">
-              <div class="badge">
-                <img src="./img/coins.svg" alt="coins" />
-              </div>
+      <div class="steps__grid">
+        <article class="setps__item">
+          <div class="steps__item-top">
+            <div class="badge">
+              <img src="./img/message.svg" alt="message" />
             </div>
-            <span class="steps__item-step">ШАГ 3</span>
-            <div class="steps__item-content">
-              <h3 class="steps__item-title">Получите оценку стоимости</h3>
-              <p class="steps__item-text">
-                После предварительного знакомства с ситуацией оператор
-                подтвердит возможность проведения анализа, стоимость и срок.
-              </p>
-            </div>
-          </article>
+          </div>
+          <span class="steps__item-step">ШАГ 1</span>
+          <div class="steps__item-content">
+            <h3 class="steps__item-title">Опишите ситуацию</h3>
+            <p class="steps__item-text">
+              Кратко расскажите, что произошло и на какой стадии находится
+              дело.
+            </p>
+          </div>
+        </article>
 
-          <article class="setps__item">
-            <div class="steps__item-top">
-              <div class="badge">
-                <img src="./img/pig-money.svg" alt="pig money" />
-              </div>
+        <article class="setps__item">
+          <div class="steps__item-top">
+            <div class="badge">
+              <img src="./img/file.svg" alt="file" />
             </div>
-            <span class="steps__item-step">ШАГ 4</span>
-            <div class="steps__item-content">
-              <h3 class="steps__item-title">Оплатите услугу</h3>
-              <p class="steps__item-text">
-                После согласования условий производится оплата.
-              </p>
-            </div>
-          </article>
+          </div>
+          <span class="steps__item-step">ШАГ 2</span>
+          <div class="steps__item-content">
+            <h3 class="steps__item-title">Отправьте документы</h3>
+            <p class="steps__item-text">
+              Оператор уточнит, какие материалы необходимы для анализа.
+            </p>
+          </div>
+        </article>
 
-          <article class="setps__item steps__item_last">
-            <div class="steps__item-top">
-              <div class="badge">
-                <img src="./img/checklist.svg" alt="checklist" />
-              </div>
+        <article class="setps__item">
+          <div class="steps__item-top">
+            <div class="badge">
+              <img src="./img/coins.svg" alt="coins" />
             </div>
-            <span class="steps__item-step">ШАГ 5</span>
-            <div class="steps__item-content">
-              <h3 class="steps__item-title">Получите письменное заключение</h3>
-              <p class="steps__item-text">
-                Готовое заключение направляется в согласованный срок.
-              </p>
+          </div>
+          <span class="steps__item-step">ШАГ 3</span>
+          <div class="steps__item-content">
+            <h3 class="steps__item-title">Получите оценку стоимости</h3>
+            <p class="steps__item-text">
+              После предварительного знакомства с ситуацией оператор
+              подтвердит возможность проведения анализа, стоимость и срок.
+            </p>
+          </div>
+        </article>
+
+        <article class="setps__item">
+          <div class="steps__item-top">
+            <div class="badge">
+              <img src="./img/pig-money.svg" alt="pig money" />
             </div>
-          </article>
-        </div>
-        <button class="btn">Обсудить мою ситуацию</button>
-      </section>
+          </div>
+          <span class="steps__item-step">ШАГ 4</span>
+          <div class="steps__item-content">
+            <h3 class="steps__item-title">Оплатите услугу</h3>
+            <p class="steps__item-text">
+              После согласования условий производится оплата.
+            </p>
+          </div>
+        </article>
 
-      <section class="section confidentiality">
-        <h2 class="confidentiality__title">
-          Как обеспечивается конфиденциальность обращения
-        </h2>
-        <p class="confidentiality__description">
-          Юридические документы содержат чувствительную информацию. Поэтому
-          процесс работы построен таким образом, чтобы доступ к материалам имел
-          только ограниченный круг специалистов.
-        </p>
-
-        <div class="confidentiality__list">
-          <article class="confidentiality__card">
-            <img src="./img/hands.png" alt="hand" />
-            <div class="confidentiality__card-content">
-              <h3 class="confidentiality__card-title">
-                Только необходимые документы
-              </h3>
-              <p class="confidentiality__card-text">
-                Мы запрашиваем только те документы, которые действительно
-                необходимы для анализа конкретной ситуации. Не нужно загружать
-                материалы, не относящиеся к вашему вопросу.
-              </p>
+        <article class="setps__item steps__item_last">
+          <div class="steps__item-top">
+            <div class="badge">
+              <img src="./img/checklist.svg" alt="checklist" />
             </div>
-          </article>
+          </div>
+          <span class="steps__item-step">ШАГ 5</span>
+          <div class="steps__item-content">
+            <h3 class="steps__item-title">Получите письменное заключение</h3>
+            <p class="steps__item-text">
+              Готовое заключение направляется в согласованный срок.
+            </p>
+          </div>
+        </article>
+      </div>
+      <button class="btn">Обсудить мою ситуацию</button>
+    </section>
 
-          <article class="confidentiality__card">
-            <img src="./img/lock.png" alt="lock" />
-            <div class="confidentiality__card-content">
-              <h3 class="confidentiality__card-title">Ограниченный доступ</h3>
-              <p class="confidentiality__card-text">
-                Материалы доступны только оператору и специалисту, который
-                готовит аналитическое заключение. Доступ третьих лиц
-                исключается.
-              </p>
-            </div>
-          </article>
+    <section class="section confidentiality">
+      <h2 class="confidentiality__title">
+        Как обеспечивается конфиденциальность обращения
+      </h2>
+      <p class="confidentiality__description">
+        Юридические документы содержат чувствительную информацию. Поэтому
+        процесс работы построен таким образом, чтобы доступ к материалам имел
+        только ограниченный круг специалистов.
+      </p>
 
-          <article class="confidentiality__card">
-            <img src="./img/folder.png" alt="folder" />
-            <div class="confidentiality__card-content">
-              <h3 class="confidentiality__card-title">
-                После завершения работы
-              </h3>
-              <p class="confidentiality__card-text">
-                После подготовки заключения документы хранятся только в течение
-                срока, необходимого для исполнения обязательств перед клиентом.
-                По запросу клиента материалы могут быть удалены.
-              </p>
-            </div>
-          </article>
+      <div class="confidentiality__list">
+        <article class="confidentiality__card">
+          <img src="./img/hands.png" alt="hand" />
+          <div class="confidentiality__card-content">
+            <h3 class="confidentiality__card-title">
+              Только необходимые документы
+            </h3>
+            <p class="confidentiality__card-text">
+              Мы запрашиваем только те документы, которые действительно
+              необходимы для анализа конкретной ситуации. Не нужно загружать
+              материалы, не относящиеся к вашему вопросу.
+            </p>
+          </div>
+        </article>
 
-          <article class="confidentiality__card">
-            <img src="./img/secure.png" alt="secure" />
-            <div class="confidentiality__card-content">
-              <h3 class="confidentiality__card-title">Передача документов</h3>
-              <p class="confidentiality__card-text">
-                Документы передаются через защищённые каналы связи. Мы не
-                публикуем материалы клиентов и не используем их в качестве
-                примеров без согласия.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
+        <article class="confidentiality__card">
+          <img src="./img/lock.png" alt="lock" />
+          <div class="confidentiality__card-content">
+            <h3 class="confidentiality__card-title">Ограниченный доступ</h3>
+            <p class="confidentiality__card-text">
+              Материалы доступны только оператору и специалисту, который
+              готовит аналитическое заключение. Доступ третьих лиц
+              исключается.
+            </p>
+          </div>
+        </article>
 
-      <section class="section pricing">
-        <h2 class="pricing__title">Стоимость аналитического заключения</h2>
-        <div class="pricing__service">
-          <div class="service__top">
-            <div class="service__grid">
-              <div class="service__main">
-                <span class="badge service__icon">
+        <article class="confidentiality__card">
+          <img src="./img/folder.png" alt="folder" />
+          <div class="confidentiality__card-content">
+            <h3 class="confidentiality__card-title">
+              После завершения работы
+            </h3>
+            <p class="confidentiality__card-text">
+              После подготовки заключения документы хранятся только в течение
+              срока, необходимого для исполнения обязательств перед клиентом.
+              По запросу клиента материалы могут быть удалены.
+            </p>
+          </div>
+        </article>
+
+        <article class="confidentiality__card">
+          <img src="./img/secure.png" alt="secure" />
+          <div class="confidentiality__card-content">
+            <h3 class="confidentiality__card-title">Передача документов</h3>
+            <p class="confidentiality__card-text">
+              Документы передаются через защищённые каналы связи. Мы не
+              публикуем материалы клиентов и не используем их в качестве
+              примеров без согласия.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pricing">
+      <h2 class="pricing__title">Стоимость аналитического заключения</h2>
+      <div class="pricing__service">
+        <div class="service__top">
+          <div class="service__grid">
+            <div class="service__main">
+              <span class="badge service__icon">
                 <img src="./img/list-search.svg" alt="" />
               </span>
               <h3 class="service__title">Разбор юридической ситуации</h3>
-              </div>
-              <div class="service__all-list">
-                <ul class="list service__list_left">
+            </div>
+            <div class="service__all-list">
+              <ul class="list service__list_left">
                 <li class="list-item">Предварительное изучение обращения</li>
                 <li class="list-item">Письменная оценка ситуации</li>
                 <li class="list-item">Возможные сценарии развития</li>
@@ -557,286 +533,303 @@
                 <li class="list-item">Описание основных рисков</li>
                 <li class="list-item">Рекомендации по дальнейшим действиямы</li>
               </ul>
-              </div>
             </div>
           </div>
-          <div class="service__bottom">
-            <div class="service__price">
-              <span class="service__amount">5 000 ₽</span>
-              <span class="service__term">до 5 рабочих дней</span>
-            </div>
+        </div>
+        <div class="service__bottom">
+          <div class="service__price">
+            <span class="service__amount">5 000 ₽</span>
+            <span class="service__term">до 5 рабочих дней</span>
+          </div>
 
-            <button class="btn service__btn">
-              Запрос предварительной оценки
+          <button class="btn service__btn">
+            Запрос предварительной оценки
+          </button>
+        </div>
+      </div>
+
+      <div class="pricing__preview">
+        <div class="preview__grid">
+          <div class="preview__img">
+            <img src="./img/document.png" alt="document" />
+            <div class="circle"></div>
+          </div>
+
+          <div class="preview__wrapper">
+            <div class="preview__content">
+              <h3>Как выглядит аналитическое заключение</h3>
+              <p class="preview__text">
+                По итогам анализа вы получите структурированный документ с
+                описанием ситуации, оценкой возможных сценариев, основными
+                рисками и рекомендациями по дальнейшим действиям. Заключение
+                готовится индивидуально на основании переданных вами
+                документов.
+              </p>
+            </div>
+            <button class="preview__button">
+              <img src="./img/pdf-icon.svg" alt="pdf" /> Открыть заключение
             </button>
-          </div>
-        </div>
-
-        <div class="pricing__preview">
-          <div class="preview__grid">
-            <div class="preview__img">
-                <img src="./img/document.png" alt="document" />
-                <div class="circle"></div>
-            </div>
-
-            <div class="preview__wrapper">
-              <div class="preview__content">
-                <h3>Как выглядит аналитическое заключение</h3>
-                <p class="preview__text">
-                  По итогам анализа вы получите структурированный документ с
-                  описанием ситуации, оценкой возможных сценариев, основными
-                  рисками и рекомендациями по дальнейшим действиям. Заключение
-                  готовится индивидуально на основании переданных вами
-                  документов.
-                </p>
-              </div>
-              <button class="preview__button">
-                <img src="./img/pdf-icon.svg" alt="pdf" /> Открыть заключение
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section results">
-        <h2>Примеры ситуаций и результатов разбора</h2>
-        <p class="results__description">
-          Каждая ситуация индивидуальна. Ниже показано, какие вопросы можно
-          исследовать в рамках аналитического заключения и какой результат
-          получает клиент.
-        </p>
-
-        <div class="slider results__slider swiper">
-          <div class="swiper-wrapper">
-            <article class="results__slide swiper-slide">
-              <div class="results__slide-img">
-                <img src="./img/slide-img.png" alt="" />
-              </div>
-              <h3>Получили постановление о возбуждении уголовного дела</h3>
-
-              <div class="results__paragraph">
-                <h4>Ситуация</h4>
-                <p>
-                  После проверки правоохранительные органы возбудили уголовное
-                  дело. Клиент не понимал, насколько серьёзна ситуация, какие
-                  действия могут последовать дальше и какие риски необходимо
-                  учитывать уже сейчас.
-                </p>
-              </div>
-              <div class="results__paragraph">
-                <h4>Изучили</h4>
-                <p>
-                  — постановление о возбуждении уголовного дела;<br />
-                  — заявление;<br />
-                  — объяснения;<br />
-                  — имеющиеся документы по обстоятельствам дела.
-                </p>
-              </div>
-              <div class="results__paragraph">
-                <h4>Что показал разбор</h4>
-                <p>
-                  — оценили возможные направления развития дела;<br />
-                  — определили ключевые обстоятельства, которые могут повлиять
-                  на ход расследования.
-                </p>
-              </div>
-              <button class="results__slide-btn">Подробнее</button>
-            </article>
-
-            <article class="results__slide swiper-slide">
-              <div class="results__slide-img">
-                <img src="./img/slide-img.png" alt="" />
-              </div>
-              <h3>Уже работаете с адвокатом, но хотите второе мнение</h3>
-
-              <div class="results__paragraph">
-                <h4>Ситуация</h4>
-                <p>
-                  По делу уже работал адвокат, однако клиент сомневался в
-                  выбранной стратегии и хотел получить независимую оценку
-                  материалов.
-                </p>
-              </div>
-              <div class="results__paragraph">
-                <h4>Изучили</h4>
-                <p>
-                  — процессуальные документы;<br />
-                  — подготовленные процессуальные документы адвоката;<br />
-                  — судебные материалы;<br />
-                  — переписку по делу.
-                </p>
-              </div>
-              <div class="results__paragraph">
-                <h4>Что показал разбор</h4>
-                <p>
-                  — оценили выбранную стратегию;<br />
-                  — выявили вопросы, которые требуют дополнительного внимания.
-                </p>
-              </div>
-              <button class="results__slide-btn">Подробнее</button>
-            </article>
-
-            <article class="results__slide swiper-slide">
-              <h3>Проверили риски перед важным процессуальным шагом</h3>
-
-              <div class="results__paragraph">
-                <h4>Ситуация</h4>
-                <p>
-                  Клиенту нужно было понять, какие последствия может повлечь
-                  дальнейшее действие и какие документы стоит подготовить
-                  заранее.
-                </p>
-              </div>
-              <div class="results__paragraph">
-                <h4>Изучили</h4>
-                <p>
-                  — материалы обращения;<br />
-                  — имеющиеся доказательства;<br />
-                  — переписку с участниками дела;<br />
-                  — возможные варианты дальнейших действий.
-                </p>
-              </div>
-              <div class="results__paragraph">
-                <h4>Что показал разбор</h4>
-                <p>
-                  — обозначили основные риски;<br />
-                  — подготовили рекомендации по снижению негативных последствий.
-                </p>
-              </div>
-              <button class="results__slide-btn">Подробнее</button>
-            </article>
-          </div>
-        </div>
-
-        <div class="slider-nav">
-          <button class="slider-nav__btn slider-nav__btn--prev" type="button">
-            <img src="./img/arrow-right.svg" alt="arrow" />
-          </button>
-          <button class="slider-nav__btn slider-nav__btn--next" type="button">
-            <img src="./img/arrow-right.svg" alt="arrow" />
-          </button>
-        </div>
-      </section>
-
-      <section class="section faq">
-        <h2>Частые вопросы</h2>
-        <div class="faq__list">
-          <div class="faq__item">
-            <div class="faq__question">
-              <img src="./img/plus.svg" alt="" />
-              <h3 class="faq__item-title">Вы гарантируете результат дела?</h3>
-            </div>
-            <div class="faq__answer">
-              Нет. Заключение содержит аналитическую оценку возможных сценариев
-              и рисков на основании представленных материалов. Итоговое решение
-              принимают суд или государственные органы.
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <div class="faq__question">
-              <img src="./img/plus.svg" alt="" />
-              <h3 class="faq__item-title">Это заменяет адвоката?</h3>
-            </div>
-            <div class="faq__answer">
-              Нет. Заключение содержит аналитическую оценку возможных сценариев
-              и рисков на основании представленных материалов. Итоговое решение
-              принимают суд или государственные органы.
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <div class="faq__question">
-              <img src="./img/plus.svg" alt="" />
-              <h3 class="faq__item-title">
-                Гарантирует ли заключение исход дела?
-              </h3>
-            </div>
-            <div class="faq__answer">
-              Нет. Заключение содержит аналитическую оценку возможных сценариев
-              и рисков на основании представленных материалов. Итоговое решение
-              принимают суд или государственные органы.
-            </div>
-          </div>
-
-          <div class="faq__item">
-            <div class="faq__question">
-              <img src="./img/plus.svg" alt="" />
-              <h3 class="faq__item-title">Какие документы потребуются?</h3>
-            </div>
-            <div class="faq__answer">
-              Нет. Заключение содержит аналитическую оценку возможных сценариев
-              и рисков на основании представленных материалов. Итоговое решение
-              принимают суд или государственные органы.
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="cta">
-      <div class="container">
-        <div class="cta__inner section">
-          <h2 class="cta__title">
-            Не понимаете, как может развиваться ситуация?
-          </h2>
-          <p class="cta__description">
-            Кратко опишите проблему. Мы сообщим, подходит ли она для
-            аналитического разбора, какие документы потребуются <br />
-            и сколько времени займёт подготовка заключения.
-          </p>
-
-          <div class="cta__actions">
-            <button class="cta__btn">Отправить описание</button>
-            <a href="#" class="cta__link">
-              <img src="./img/telegram-black.svg" alt="telegram" />
-              <span>Продолжить в Telegram</span>
-            </a>
           </div>
         </div>
       </div>
     </section>
+    <section class="section results">
+      <h2>Примеры ситуаций и результатов разбора</h2>
+      <p class="results__description">
+        Каждая ситуация индивидуальна. Ниже показано, какие вопросы можно
+        исследовать в рамках аналитического заключения и какой результат
+        получает клиент.
+      </p>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <a href="#" class="logo">
-            <div class="logo__box"></div>
-            <div class="logo__text">Мобильный адвокат</div>
-          </a>
-
-          <ul class="footer__faq">
-            <li><a href="#">Когда обращаться</a></li>
-            <li><a href="#">Как проходит работа</a></li>
-            <li><a href="#">Примеры ситуаций</a></li>
-            <li><a href="#">Что вы получите</a></li>
-            <li><a href="#">Стоимость</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__about">
-          <div class="footer__politics">
-            <span class="footer__politics-item"
-              >© 2026, ИП Иванов И.И. Все права защищены.</span
-            >
-            <div class="footer__politics-other">
-                <a href="#" class="footer__politics-item"
-              >Политика конфиденциальности</a
-            >
-            <span class="footer__politics-item">ФЗ 153</span>
+      <div class="slider results__slider swiper">
+        <div class="swiper-wrapper">
+          <article class="results__slide swiper-slide">
+            <div class="results__slide-img">
+              <img src="./img/slide-img.png" alt="" />
             </div>
-          </div>
-          <a href="#" class="footer__dev">Разработчик</a>
-        </div>
-        <div class="footer__info">
-          Сервис является информационно-справочной службой. Представленная
-          информация и подготовленные заключения носят информационный характер и
-          не являются гарантией достижения определённого правового результата.
-        </div>
-        <a href="#" class="footer__dev_mobile">Разработчик</a>
-      </div>
-    </footer>
+            <h3>Получили постановление о возбуждении уголовного дела</h3>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./scripts/main.js"></script>
-  </body>
+            <div class="results__paragraph">
+              <h4>Ситуация</h4>
+              <p>
+                После проверки правоохранительные органы возбудили уголовное
+                дело. Клиент не понимал, насколько серьёзна ситуация, какие
+                действия могут последовать дальше и какие риски необходимо
+                учитывать уже сейчас.
+              </p>
+            </div>
+            <div class="results__paragraph">
+              <h4>Изучили</h4>
+              <p>
+                — постановление о возбуждении уголовного дела;<br />
+                — заявление;<br />
+                — объяснения;<br />
+                — имеющиеся документы по обстоятельствам дела.
+              </p>
+            </div>
+            <div class="results__paragraph">
+              <h4>Что показал разбор</h4>
+              <p>
+                — оценили возможные направления развития дела;<br />
+                — определили ключевые обстоятельства, которые могут повлиять
+                на ход расследования.
+              </p>
+            </div>
+            <button class="results__slide-btn">Подробнее</button>
+          </article>
+
+          <article class="results__slide swiper-slide">
+            <div class="results__slide-img">
+              <img src="./img/slide-img.png" alt="" />
+            </div>
+            <h3>Уже работаете с адвокатом, но хотите второе мнение</h3>
+
+            <div class="results__paragraph">
+              <h4>Ситуация</h4>
+              <p>
+                По делу уже работал адвокат, однако клиент сомневался в
+                выбранной стратегии и хотел получить независимую оценку
+                материалов.
+              </p>
+            </div>
+            <div class="results__paragraph">
+              <h4>Изучили</h4>
+              <p>
+                — процессуальные документы;<br />
+                — подготовленные процессуальные документы адвоката;<br />
+                — судебные материалы;<br />
+                — переписку по делу.
+              </p>
+            </div>
+            <div class="results__paragraph">
+              <h4>Что показал разбор</h4>
+              <p>
+                — оценили выбранную стратегию;<br />
+                — выявили вопросы, которые требуют дополнительного внимания.
+              </p>
+            </div>
+            <button class="results__slide-btn">Подробнее</button>
+          </article>
+
+          <article class="results__slide swiper-slide">
+            <h3>Проверили риски перед важным процессуальным шагом</h3>
+
+            <div class="results__paragraph">
+              <h4>Ситуация</h4>
+              <p>
+                Клиенту нужно было понять, какие последствия может повлечь
+                дальнейшее действие и какие документы стоит подготовить
+                заранее.
+              </p>
+            </div>
+            <div class="results__paragraph">
+              <h4>Изучили</h4>
+              <p>
+                — материалы обращения;<br />
+                — имеющиеся доказательства;<br />
+                — переписку с участниками дела;<br />
+                — возможные варианты дальнейших действий.
+              </p>
+            </div>
+            <div class="results__paragraph">
+              <h4>Что показал разбор</h4>
+              <p>
+                — обозначили основные риски;<br />
+                — подготовили рекомендации по снижению негативных последствий.
+              </p>
+            </div>
+            <button class="results__slide-btn">Подробнее</button>
+          </article>
+        </div>
+      </div>
+
+      <div class="slider-nav">
+        <button class="slider-nav__btn slider-nav__btn--prev" type="button">
+          <img src="./img/arrow-right.svg" alt="arrow" />
+        </button>
+        <button class="slider-nav__btn slider-nav__btn--next" type="button">
+          <img src="./img/arrow-right.svg" alt="arrow" />
+        </button>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <h2>Частые вопросы</h2>
+      <div class="faq__list">
+        <div class="faq__item">
+          <div class="faq__question">
+            <img src="./img/plus.svg" alt="" />
+            <h3 class="faq__item-title">Вы гарантируете результат дела?</h3>
+          </div>
+          <div class="faq__answer">
+            Нет. Заключение содержит аналитическую оценку возможных сценариев
+            и рисков на основании представленных материалов. Итоговое решение
+            принимают суд или государственные органы.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <img src="./img/plus.svg" alt="" />
+            <h3 class="faq__item-title">Это заменяет адвоката?</h3>
+          </div>
+          <div class="faq__answer">
+            Нет. Заключение содержит аналитическую оценку возможных сценариев
+            и рисков на основании представленных материалов. Итоговое решение
+            принимают суд или государственные органы.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <img src="./img/plus.svg" alt="" />
+            <h3 class="faq__item-title">
+              Гарантирует ли заключение исход дела?
+            </h3>
+          </div>
+          <div class="faq__answer">
+            Нет. Заключение содержит аналитическую оценку возможных сценариев
+            и рисков на основании представленных материалов. Итоговое решение
+            принимают суд или государственные органы.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <img src="./img/plus.svg" alt="" />
+            <h3 class="faq__item-title">Какие документы потребуются?</h3>
+          </div>
+          <div class="faq__answer">
+            Нет. Заключение содержит аналитическую оценку возможных сценариев
+            и рисков на основании представленных материалов. Итоговое решение
+            принимают суд или государственные органы.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta__inner section">
+        <h2 class="cta__title">
+          Не понимаете, как может развиваться ситуация?
+        </h2>
+        <p class="cta__description">
+          Кратко опишите проблему. Мы сообщим, подходит ли она для
+          аналитического разбора, какие документы потребуются <br />
+          и сколько времени займёт подготовка заключения.
+        </p>
+
+        <div class="cta__actions">
+          <button class="cta__btn">Отправить описание</button>
+          <a href="#" class="cta__link">
+            <img src="./img/telegram-black.svg" alt="telegram" />
+            <span>Продолжить в Telegram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="logo">
+          <div class="logo__box"></div>
+          <div class="logo__text">Мобильный адвокат</div>
+        </a>
+
+        <ul class="footer__faq">
+          <li><a href="#">Когда обращаться</a></li>
+          <li><a href="#">Как проходит работа</a></li>
+          <li><a href="#">Примеры ситуаций</a></li>
+          <li><a href="#">Что вы получите</a></li>
+          <li><a href="#">Стоимость</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__about">
+        <div class="footer__politics">
+          <span class="footer__politics-item">© 2026, ИП Иванов И.И. Все права защищены.</span>
+          <div class="footer__politics-other">
+            <a href="#" class="footer__politics-item">Политика конфиденциальности</a>
+            <span class="footer__politics-item">ФЗ 153</span>
+          </div>
+        </div>
+        <a href="#" class="footer__dev">Разработчик</a>
+      </div>
+      <div class="footer__info">
+        Сервис является информационно-справочной службой. Представленная
+        информация и подготовленные заключения носят информационный характер и
+        не являются гарантией достижения определённого правового результата.
+      </div>
+      <a href="#" class="footer__dev_mobile">Разработчик</a>
+    </div>
+  </footer>
+
+  <div class="modal__overlay">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Оставьте заявку на подготовку заключения</h2>
+      <p class="modal__description">Сначала специалист ознакомится с
+        вашей ситуацией и уточнит, какие документы необходимы для проведения анализа.</p>
+
+      <div class="notice">
+        <img src="./img/i.svg" alt="i" class="notice__icon">
+        <span class="notice__text">Обращение конфиденциально</span>
+      </div>
+
+      <div class="field">
+        <label class="modal__label" for="question-1">Ваш вопрос <span class="modal__label-required">*</span></label>
+        <div class="field__control">
+          <textarea class="field__textarea" name="question-1" id="question-1" placeholder="Что произошло и что именно вы хотите понять?"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
 </html>
