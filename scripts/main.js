@@ -86,3 +86,29 @@ faqs.forEach((faq) => {
         }
     });
 });
+
+
+// mobile menu 
+const body = document.querySelector("body")
+const mobileMenu = document.querySelector(".mobile")
+const btnMobileMenu = document.querySelector(".mobile-menu")
+
+btnMobileMenu.addEventListener("click", () => {
+    const menuIcon = btnMobileMenu.querySelector("img")
+    // если закрыто меню
+    if (menuIcon.src.includes("menu")) {
+        body.classList.add("has-menu")
+        mobileMenu.classList.add("mobile_open")
+
+        menuIcon.src = "./img/close.svg";
+        menuIcon.alt = "close";
+        return
+    }
+
+    // если открыто меню
+    body.classList.remove("has-menu")
+    mobileMenu.classList.remove("mobile_open")
+
+    menuIcon.src = "./img/menu.svg";
+    menuIcon.alt = "menu";
+})
