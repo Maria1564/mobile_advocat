@@ -30,10 +30,23 @@ window.addEventListener("resize", setNavDividers);
 
 //slider 
 if (document.querySelector(".results__slider") && window.Swiper) {
-    new Swiper(".results__slider", {
-        slidesPerView: 1,
+    const resultsSection = document.querySelector(".results");
+    const getSliderOffsets = () => {
+        const resultsRect = resultsSection.getBoundingClientRect();
+
+        return {
+            before: resultsRect.left,
+            after: window.innerWidth - resultsRect.right,
+        };
+    };
+    const sliderOffsets = getSliderOffsets();
+
+    const resultsSwiper = new Swiper(".results__slider", {
+        slidesPerView: 1.08,
         spaceBetween: 8,
         speed: 550,
+        slidesOffsetBefore: sliderOffsets.before,
+        slidesOffsetAfter: sliderOffsets.after,
         navigation: {
             prevEl: ".slider-nav__btn--prev",
             nextEl: ".slider-nav__btn--next",
@@ -46,6 +59,14 @@ if (document.querySelector(".results__slider") && window.Swiper) {
                 slidesPerView: 2.15,
             },
         },
+    });
+
+    window.addEventListener("resize", () => {
+        const sliderOffsets = getSliderOffsets();
+
+        resultsSwiper.params.slidesOffsetBefore = sliderOffsets.before;
+        resultsSwiper.params.slidesOffsetAfter = sliderOffsets.after;
+        resultsSwiper.update();
     });
 }
 

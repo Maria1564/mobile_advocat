@@ -1,5 +1,6 @@
 html {
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -253,6 +254,7 @@ li {
   aspect-ratio: 720/517;
   height: auto;
   position: relative;
+  z-index: 2;
 }
 
 .hero__image>img {
@@ -915,8 +917,8 @@ li {
 }
 
 .results__slider {
-  width: calc(100vw - max(0px, (100vw - 1376px) / 2));
-  margin-right: calc(-1 * max(0px, (100vw - 1376px) / 2));
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
   overflow: hidden;
 }
 
@@ -1223,6 +1225,15 @@ li {
   .hero__image {
     right: -280px;
   }
+
+  .preview__img {
+    width: 295px;
+  }
+
+  .preview__img .circle {
+    top: 29px;
+    left: -21px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -1300,7 +1311,8 @@ li {
 
   .preview__img {
     position: relative;
-    width: 250px;
+    width: 120px;
+    top: -4px;
   }
 
   .footer__faq {
@@ -1320,6 +1332,11 @@ li {
 
   .comparison__cards {
     flex-direction: column-reverse;
+  }
+
+  .comparison__card {
+    flex: 0 1 auto;
+    width: 100%;
   }
 
   .footer-top {
@@ -1383,7 +1400,7 @@ li {
   }
 
   .benefits {
-    margin-top: 40px;
+    margin-top: 58px;
   }
 
   .benefits__list {
@@ -1405,6 +1422,10 @@ li {
 
   .conclusion__img>img {
     width: 243px;
+  }
+
+  .conclusion__img {
+    margin-bottom: 32px;  
   }
 
   .conclusion__card {
@@ -1480,12 +1501,12 @@ li {
   }
 
   .preview__img {
-    width: 200px;
+    left: 1px;
   }
 
   .preview__img .circle {
-    top: 50px;
-    left: 2px;
+    top: 28px;
+    left: -32px;
   }
 
   .pricing__title {
@@ -1513,9 +1534,6 @@ li {
 }
 
 @media (max-width: 500px) {
-  .benefits__list {
-    grid-template-columns: 1fr;
-  }
 
   .cases__card {
     height: auto;
@@ -1546,4 +1564,9 @@ li {
   .steps__grid {
     grid-template-columns: 1fr;
   }
+
+  .benefits__list {
+    grid-template-columns: 1fr;
+  }
+
 }
